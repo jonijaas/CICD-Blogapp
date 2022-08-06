@@ -7,5 +7,6 @@ https://fullstackopen.com/en/part11
 
 ---
 
+## CI/CD Blogapp
 App is based on bloglist application developed in Full Stack Open parts 4 and 5. The changes are mostly for compatibility and adding CI/CD-pipeline.
 
