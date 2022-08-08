@@ -54,7 +54,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "cicd-blogapp"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-          healthcheck: "https://cicd-blogapp.herokuapp.com/api/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
+          #healthcheck: "https://cicd-blogapp.herokuapp.com/api/health"
+          #checkstring: "ok"
+          #rollbackonhealthcheckfailed: true
         if: ${{ github.event_name == 'push' && contains(join(github.event.commits.*.message, ', '), '#skip') == false }}
