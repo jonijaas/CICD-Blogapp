@@ -28,6 +28,10 @@ jobs:
         run: npm run eslint
       - name: Backend / test
         run: npm run test
+        env:
+          TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
+          PORT: ${{secrets.PORT}}
+          SECRET: ${{secrets.SECRET}}
       - name: Frontend / test
         working-directory: ./frontend
         run: npm run test
@@ -37,3 +41,7 @@ jobs:
           command: npm run test:e2e
           start: npm run start:test
           wait-on: http://localhost:3003
+          env:
+            TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
+            PORT: ${{secrets.PORT}}
+            SECRET: ${{secrets.SECRET}}
