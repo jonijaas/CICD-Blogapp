@@ -26,6 +26,9 @@ jobs:
       - name: Frontend / lint
         working-directory: ./frontend
         run: npm run eslint
+      - name: Build
+        working-directory: ./frontend
+        run: npm run build
       - name: Backend / test
         run: npm run test
         env:
