@@ -38,7 +38,7 @@ jobs:
       - name: Frontend / test
         working-directory: ./frontend
         run: npm run test
-      - name: e2e tests
+      - name: E2e tests
         uses: cypress-io/github-action@v2
         env:
           TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
