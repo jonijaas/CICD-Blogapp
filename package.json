@@ -10,8 +10,7 @@
     "eslint": "eslint .",
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
     "start:test": "cross-env NODE_ENV=test node index.js",
-    "test:e2e": "cd frontend && npm run test:e2e",
-    "build": "cd frontend && npm run build"
+    "test:e2e": "cd frontend && npm run test:e2e"
   },
   "author": "Joni",
   "license": "ISC",
